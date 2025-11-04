@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dance Journey - Namrata Iyer</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Additional Dance Page Styles */
+        .dance-header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding: 60px 40px;
+            background: linear-gradient(135deg, var(--text-secondary) 0%, var(--bg-accent) 100%);
+            border-radius: 20px;
+            box-shadow: 0 8px 32px var(--shadow-hover);
+        }
+        
+        .dance-header h1 {
+            font-size: 3.5em;
+            color: var(--text-light);
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+            margin-bottom: 10px;
+        }
+        
+        .dance-subtitle {
+            font-size: 1.3em;
+            color: var(--text-light);
+            font-style: italic;
+            opacity: 0.95;
+        }
+        
+        .video-section {
+            margin-bottom: 50px;
+            text-align: center;
+        }
+        
+        .video-container {
+            position: relative;
+            width: 100%;
+            max-width: 900px;
+            margin: 0 auto;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+            border-radius: 20px;
+            box-shadow: 0 12px 40px var(--shadow-hover);
+        }
+        
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+            border-radius: 20px;
+        }
+        
+        .bio-section {
+            background: var(--bg-secondary);
+            padding: 50px;
+            border-radius: 20px;
+            margin-bottom: 50px;
+            box-shadow: 0 8px 32px var(--shadow);
+        }
+        
+        .bio-section h2 {
+            font-size: 2.5em;
+            color: var(--text-secondary);
+            margin-bottom: 25px;
+            text-align: center;
+        }
+        
+        .bio-content {
+            font-size: 1.15em;
+            color: var(--text-primary);
+            line-height: 1.9;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        
+        .bio-content p {
+            margin-bottom: 20px;
+        }
+        
+        .gallery-section {
+            background: var(--bg-secondary);
+            padding: 50px;
+            border-radius: 20px;
+            box-shadow: 0 8px 32px var(--shadow);
+            margin-bottom: 40px;
+        }
+        
+        .gallery-section h2 {
+            font-size: 2.5em;
+            color: var(--text-secondary);
+            margin-bottom: 40px;
+            text-align: center;
+        }
+        
+        .photo-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 25px;
+            margin-top: 30px;
+        }
+        
+        .photo-placeholder {
+            aspect-ratio: 1;
+            background: linear-gradient(135deg, var(--text-secondary), var(--bg-accent));
+            border-radius: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--text-light);
+            font-size: 1.1em;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            box-shadow: 0 4px 15px var(--shadow);
+            border: 3px solid transparent;
+        }
+        
+        .photo-placeholder:hover {
+            transform: translateY(-5px) scale(1.02);
+            box-shadow: 0 8px 25px var(--shadow-hover);
+            border-color: var(--text-light);
+        }
+        
+        .photo-placeholder img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 12px;
+        }
+        
+        @media (max-width: 768px) {
+            .dance-header {
+                padding: 40px 20px;
+            }
+            
+            .dance-header h1 {
+                font-size: 2.5em;
+            }
+            
+            .bio-section,
+            .gallery-section {
+                padding: 30px 20px;
+            }
+            
+            .photo-grid {
+                grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+                gap: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Sidebar Navigation -->
+    <nav class="sidebar">
+        <div class="sidebar-logo">
+            <h2>NI</h2>
+        </div>
+        <ul class="sidebar-nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="qualifications.html">Qualifications</a></li>
+            <li><a href="service.html">Service</a></li>
+            <li><a href="genai.html" class="active">Dance</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <div class="container">
+            <!-- Dance Header -->
+            <div class="dance-header">
+                <h1>My Dance Journey</h1>
+                <p class="dance-subtitle">Passion • Performance • Artistry</p>
+            </div>
+
+            <!-- Video Section -->
+            <section class="video-section">
+                <div class="video-container">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/7MFPHSo8l4E?si=Z3PjVVvU_g6kt5x0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </section>
+
+            <!-- Biography Section -->
+            <section class="bio-section">
+                <h2>My Story</h2>
+                <div class="bio-content">
+                    <p>I began learning Bharatanatyam at the age of 5 from Smt. Radhika Muralidharan, who gave me my early years of dance training and instilled in me a deep love for this art form. I have been a student of Smt. Vaishnavi Manoharan for the past 10 years and have been learning the breadth and nuances of dance.</p>
+                    <p>I recently completed my arangetram with Vaishnavi aunty on August 8th, 2025. This is a goal I have been working towards for a long time, and with even more effort since the beginning of sophomore year. I spent the entire summer in New Jersey, practicing dance in a gurukulam style where I stayed in my teacher's house and spent most of my waking hours in practice.</p>
+                </div>
+            </section>
+
+            <!-- Photo Gallery Section -->
+            <section class="gallery-section">
+                <h2>Performance Gallery</h2>
+                <div class="photo-grid">
+                    <div class="photo-placeholder" data-photo="1">
+                        <span>Photo 1</span>
+                    </div>
+                    <div class="photo-placeholder" data-photo="2">
+                        <span>Photo 2</span>
+                    </div>
+                    <div class="photo-placeholder" data-photo="3">
+                        <span>Photo 3</span>
+                    </div>
+                    <div class="photo-placeholder" data-photo="4">
+                        <span>Photo 4</span>
+                    </div>
+                    <div class="photo-placeholder" data-photo="5">
+                        <span>Photo 5</span>
+                    </div>
+                    <div class="photo-placeholder" data-photo="6">
+                        <span>Photo 6</span>
+                    </div>
+                    <div class="photo-placeholder" data-photo="7">
+                        <span>Photo 7</span>
+                    </div>
+                    <div class="photo-placeholder" data-photo="8">
+                        <span>Photo 8</span>
+                    </div>
+                    <div class="photo-placeholder" data-photo="9">
+                        <span>Photo 9</span>
+                    </div>
+                    <div class="photo-placeholder" data-photo="10">
+                        <span>Photo 10</span>
+                    </div>
+                    <div class="photo-placeholder" data-photo="11">
+                        <span>Photo 11</span>
+                    </div>
+                    <div class="photo-placeholder" data-photo="12">
+                        <span>Photo 12</span>
+                    </div>
+                    <div class="photo-placeholder" data-photo="13">
+                        <span>Photo 13</span>
+                    </div>
+                    <div class="photo-placeholder" data-photo="14">
+                        <span>Photo 14</span>
+                    </div>
+                    <div class="photo-placeholder" data-photo="15">
+                        <span>Photo 15</span>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Back to Home -->
+            <div class="back-home">
+                <h3><a href="index.html">← Back to Home</a></h3>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="theme-switch.js"></script>
+    <script src="genaiscript.js"></script>
+</body>
+</html>
